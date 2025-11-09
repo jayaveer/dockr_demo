@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0; }
+        .container { max-width: 600px; margin: 0 auto; background-color: #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .header { text-align: center; color: #333; margin-bottom: 20px; }
+        .content { color: #555; line-height: 1.6; margin: 20px 0; }
+        .highlight { background-color: #fff3cd; padding: 15px; border-radius: 4px; margin: 20px 0; }
+        .footer { text-align: center; color: #999; font-size: 12px; margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>{{ app_name }}</h1>
+            <h2>Welcome Aboard!</h2>
+        </div>
+        
+        <div class="content">
+            <p>Hello {{ username }},</p>
+            
+            <p>Welcome to {{ app_name }}! We're excited to have you on board.</p>
+            
+            <div class="highlight">
+                <p><strong>Your account has been created successfully.</strong></p>
+                <p>You can now start exploring, reading posts, and sharing your thoughts with our community.</p>
+            </div>
+            
+            <p>Here's what you can do next:</p>
+            <ul>
+                <li>Complete your profile with a bio and profile picture</li>
+                <li>Explore our blog posts and categories</li>
+                <li>Follow topics that interest you</li>
+                <li>Share your own posts and engage with the community</li>
+            </ul>
+            
+            <p>If you have any questions or need assistance, feel free to reach out to our support team.</p>
+            
+            <p>Happy blogging!<br>{{ app_name }} Team</p>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2024 {{ app_name }}. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
