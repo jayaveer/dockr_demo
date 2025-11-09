@@ -28,7 +28,7 @@ class Settings(BaseSettings):
     DEBUG: bool = False
     
     # CORS
-    CORS_ORIGINS: str = "http://localhost:3000,http://localhost:8000"
+    CORS_ORIGINS: str = "http://localhost:3000"
     
     # Rate Limiting
     RATE_LIMIT_ENABLED: bool = True
