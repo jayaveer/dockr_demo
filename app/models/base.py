@@ -31,3 +31,4 @@ class AuditMixin:
 class BaseModel(Base, AuditMixin):
     """Base model for all entities with audit columns"""
     __abstract__ = True
+

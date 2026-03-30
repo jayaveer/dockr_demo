@@ -96,3 +96,4 @@ async def get_token(credentials: HTTPAuthCredentials = Depends(security)) -> dic
             headers={"WWW-Authenticate": "Bearer"},
         )
     return payload
+

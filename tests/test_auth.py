@@ -103,3 +103,4 @@ def test_forgot_password(test_db):
     )
     assert response.status_code == 200
     assert "If the email exists" in response.json()["message"]
+

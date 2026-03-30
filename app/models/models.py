@@ -102,3 +102,4 @@ class Comment(BaseModel):
     post = relationship("Post", back_populates="comments")
     author = relationship("User", back_populates="comments", foreign_keys=[author_id])
     replies = relationship("Comment", remote_side=[id])
+

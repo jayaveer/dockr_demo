@@ -71,3 +71,4 @@ def delete_tag(tag_id: int, current_user = Depends(get_current_user),
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="Error deleting tag"
         )
+

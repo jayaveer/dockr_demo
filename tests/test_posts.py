@@ -118,3 +118,4 @@ def test_delete_post_success(test_db):
         headers={"Authorization": f"Bearer {token}"}
     )
     assert response.status_code == 204
+

@@ -222,3 +222,4 @@ def change_password(request: PasswordChangeRequest,
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="Error changing password"
         )
+

@@ -464,3 +464,4 @@ class CommentService:
             db.rollback()
             logger.error(f"Error approving comment: {str(e)}")
             raise
+

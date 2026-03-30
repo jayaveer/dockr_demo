@@ -50,3 +50,4 @@ class SuccessResponse:
             "message": message,
             "data": data
         }
+
