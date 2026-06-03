@@ -14,7 +14,7 @@ def test_signup_success(test_db):
             "email": "test@example.com",
             "username": "testuser",
             "full_name": "Test User",
-            "password": "password123"
+            "password": "password"
         }
     )
     assert response.status_code == 201
@@ -31,7 +31,7 @@ def test_signup_duplicate_email(test_db):
         json={
             "email": "test@example.com",
             "username": "testuser1",
-            "password": "password123"
+            "password": "password"
         }
     )
     
@@ -41,7 +41,7 @@ def test_signup_duplicate_email(test_db):
         json={
             "email": "test@example.com",
             "username": "testuser2",
-            "password": "password123"
+            "password": "password"
         }
     )
     assert response.status_code == 400
@@ -56,7 +56,7 @@ def test_signin_success(test_db):
         json={
             "email": "test@example.com",
             "username": "testuser",
-            "password": "password123"
+            "password": "password"
         }
     )
     
@@ -65,7 +65,7 @@ def test_signin_success(test_db):
         "/api/v1/auth/signin",
         json={
             "email": "test@example.com",
-            "password": "password123"
+            "password": "password"
         }
     )
     assert response.status_code == 200
@@ -80,7 +80,7 @@ def test_signin_invalid_password(test_db):
         json={
             "email": "test@example.com",
             "username": "testuser",
-            "password": "password123"
+            "password": "password"
         }
     )
     

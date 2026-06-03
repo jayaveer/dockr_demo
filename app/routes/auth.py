@@ -125,7 +125,7 @@ def forgot_password(request: ForgotPasswordRequest, db: Session = Depends(get_db
         else:
             logger.warning(f"Password reset requested for non-existent email: {request.email}")
         
-        return SuccessResponse(
+        return SuccessResponse.success(
             message="If the email exists, a password reset link has been sent"
         )
     
@@ -164,7 +164,7 @@ def reset_password(request: ResetPasswordRequest, db: Session = Depends(get_db))
         
         logger.info(f"Password reset successfully for user: {db_user.email}")
         
-        return SuccessResponse(message="Password reset successfully")
+        return SuccessResponse.success(message="Password reset successfully")
     
     except HTTPException:
         raise
@@ -212,7 +212,7 @@ def change_password(request: PasswordChangeRequest,
         
         logger.info(f"Password changed for user: {db_user.email}")
         
-        return SuccessResponse(message="Password changed successfully")
+        return SuccessResponse.success(message="Password changed successfully")
     
     except HTTPException:
         raise

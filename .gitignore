@@ -43,3 +43,16 @@ env/
 .DS_Store
 logs/
 *.log
+.github
+.import_linter_cache
+.medusa
+.mypy_cache
+.pyre
+.ruff_cache
+.semgrep
+.env.example
+.importlinter
+.pyre_configuration
+codeaudit-report.html
+medusa.yml
+test.db

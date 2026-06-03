@@ -9,9 +9,6 @@ from app.core.logging import logger
 from app.routes import auth, posts, comments, categories, tags
 from app.core.database import Base, engine
 
-# Create database tables
-Base.metadata.create_all(bind=engine)
-
 # Initialize FastAPI app
 app = FastAPI(
     title=settings.APP_NAME,

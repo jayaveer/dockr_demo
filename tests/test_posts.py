@@ -3,7 +3,7 @@ from tests.conftest import client
 
 
 def get_auth_token(email: str = "test@example.com", username: str = "testuser",
-                  password: str = "password123") -> str:
+                  password: str = "password") -> str:
     """Helper to get authentication token"""
     response = client.post(
         "/api/v1/auth/signup",
